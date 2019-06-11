@@ -13,5 +13,18 @@ package modeling.dynamicProgramming;
 public class Case2 {
     public static void main(String... agrs) {
         int[][] initData = {{1, 3, 5, 9}, {8, 1, 3, 4}, {5, 0, 6, 1}, {8, 8, 4, 0}};
+        int[][] dp = {};
+        //todo init dp[i][j] = 0
+
+        /*
+            for i,j
+            if dp[i][j] == 0 {
+                if i==0&&j==0 dp[i][j] = arr[i][j];
+                if i==0&&j!=0 dp[i][j] = arr[i][j] + dp[i][j-1];
+                if i!=0&&j==0 dp[i][j] = arr[i][j] + dp[i-1][j];
+                else
+                dp[i][j] = arr[i][j]+min(dp[i-1][j],dp[i][j-1]);
+            }
+         */
     }
 }
